@@ -1,0 +1,86 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:id="@+id/item_detail_container"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    tools:context="com.tinker.mappie.ItemDetailActivity" tools:ignore="MergeRootFrame"
+    android:background="@color/accent_material_light">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        style="@style/AppTheme"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:textColor="#ffffffff" />
+
+    <QuickContactBadge
+        android:layout_width="158dp"
+        android:layout_height="158dp"
+        android:id="@+id/quickContactBadge"
+        android:layout_gravity="top|left"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="10dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="@string/store_name"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:textColor="#ffffffff"
+        android:layout_gravity="right|top"
+        android:layout_marginTop="85dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:layout_gravity="right|top"
+        android:textColor="#ffffffff"
+        android:text="@string/phone_no_store"
+        android:layout_marginTop="120dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:ems="10"
+        android:id="@+id/editText3"
+        android:textColor="#ffffffff"
+        android:layout_gravity="right|top"
+        android:text="@string/postal_address_store"
+        android:layout_marginTop="155dp"/>
+
+    <RatingBar
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar"
+        android:textColor="#ffffffff"
+        android:layout_gravity="right|top"
+        android:layout_marginTop="185dp"
+        android:layout_marginRight="15dp"
+        android:numStars="3" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:id="@+id/scrollView"
+        android:layout_gravity="center_horizontal|bottom"
+        android:background="#ffffff">
+
+    </ScrollView>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="310dp"
+        android:id="@+id/listView"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="5dp"
+        android:background="#fff1fdff" />
+
+</FrameLayout>
